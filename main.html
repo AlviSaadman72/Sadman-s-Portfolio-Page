@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadman's Work Engine - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dark-theme"> <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="work engine.png" alt="Sadman's Work Engine"> <span>Sadman's Work Engine</span>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#about" class="blue-button">About Me</a></li>
+                    <li><a href="#portfolio" class="blue-button">Project Works</a></li>
+                    <li><a href="#contact" class="blue-button">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div id="digital-clock" class="digital-time"></div>
+                <div id="calendar" class="calendar-date"></div>
+                <button id="theme-toggle" class="green-button toggle-theme-button">Toggle Theme</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="hero" class="hero-section">
+            <div class="hero-profile-container">
+                <img src="picture.jpeg" alt="Your Profile Picture" class="profile-picture">
+            </div>
+            <div class="hero-text">
+                <h1>Hi, I'm Sadman</h1>
+                <p class="tagline">A passionate CSE graduate looking for best opportunities to prove himself.</p>
+                <a href="#contact" class="green-button cta-button">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section common-section">
+            <h2>About Me</h2>
+            <div class="section-content">
+                <p>My career objective is that I want to work with a company with ample opportunities and a friendly environment where I can showcase all my skills. I believe in honesty, completing work on time, being able to work well under pressure, and if the company gives me the opportunity, I can do all of them</p>
+            </div>
+        </section>
+
+        <section id="academic" class="academic-section common-section">
+            <h2>Academic Background</h2>
+            <div class="section-content">
+                <div class="academic-entry">
+                    <h3>BS in Computer Science & Engineering (2024)</h3>
+                    <p>Stamford University Bangladesh</p>
+                    <h3>Higher Secondary Certificate - HSC (2014)</h3>
+                    <p>Motijheel Govt. Boys High School, Dhaka</p>
+                    <h3>Secondary School Certificate - SSC (2012)</h3>
+                    <p>Ideal School & College, Motijheel, Dhaka</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section common-section">
+            <h2>Skills</h2>
+            <div class="section-content skills-grid">
+                <span class="skill-tag green-button">PHP</span>                
+                <span class="skill-tag green-button">HTML</span>
+                <span class="skill-tag green-button">CSS</span>
+                <span class="skill-tag green-button">JavaScript</span>
+                <span class="skill-tag green-button">Team Leadership</span>
+                <span class="skill-tag green-button">Good Communication in English</span>
+                <span class="skill-tag green-button">Website Design</span>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section common-section">
+            <h2>My Project Works</h2>
+            <div class="section-content project-grid">
+                <div class="project-card">
+                    <h3>CV Guy (Completed in 2025)</h3>
+                    <p>A simple resume builder website to make your resume more attractive and acceptable to people</p>
+                </div>
+                <div class="project-card">
+                    <h3>Sadman's Work Engine (Completed in 2025)</h3>
+                    <p>My personal portfolio, from where you can know about myself, my academic projects and can reach me through LinkedIn, Email or GitHub</p>
+                </div>
+                <div class="project-card">
+                    <h3>Amader Jatra - A guranteed safe Journey (unfinished)</h3>
+                    <p>An ensured ticket booking service website for your comfortable Plane/Bus/Launch/Train journey</p>
+                </div>
+                <div class="project-card">
+                    <h3>TicTac Toe Game (Completed in 2023)</h3>
+                    <p>This is a simple TicTac Toe game. Two players are required (user and computer). Whoever matches his/its point first, wins the game</p>
+                </div>
+                <div class="project-card">
+                    <h3>Online Quiz System (Completed in 2023)</h3>
+                    <p>It's similar to Google Classroom or Edmodo exam system. Students will participate quiz contest; the only difference will be they can re-exam the contest if somehow the network gets disconnected. Their script records won't be lost and poor connection won't affect their performance too much</p>
+                </div>
+                <div class="project-card">
+                    <h3>GoEdu: Online Educational System (Completed in 2022)</h3>
+                    <p>It's similar to Google Classroom or Edmodo platform. Its interface will be much acceptable and friendly comparing to the other two. Necessary records will be kept for a certain time</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section common-section">
+            <h2>Get in Touch</h2>
+            <div class="section-content">
+                <p>Have a question or a project idea? Feel free to send me a message!</p>
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/xdkdnkbv" method="POST">
+                    <div class="form-group">
+                        <label for="contact-name">Your Name:</label>
+                        <input type="text" id="contact-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Your Email:</label>
+                        <input type="email" id="contact-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Your Message:</label>
+                        <textarea id="contact-message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="green-button">Send Message</button>
+                </form>
+
+                <div class="direct-contact-links">
+                    <p>Or connect with me directly:</p>
+                    <div class="social-links-grid">
+                        <a href="https://github.com/AlviSaadman72" class="social-link blue-button" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/sadman-mahboob-alvi-2481512a5/" class="social-link blue-button" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Sadman's Work Engine. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
